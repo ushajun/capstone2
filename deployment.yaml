@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache2_deployment
+  name: apache2deployment
   labels:
     app: apache2
 spec:
