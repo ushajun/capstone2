@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache2deployment
+  name: nginx-deployment
   labels:
-    app: apache2
+    app: nginx
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: apache2
+      app: nginx
   template:
     metadata:
       labels:
-        app: apache2
+        app: nginx
     spec:
       containers:
-      - name: apache2_container
+      - name: nginx
         image: ushajun/capstone2:latest
         ports:
         - containerPort: 80
