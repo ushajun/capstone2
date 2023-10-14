@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ushajun/capstone2:latest
+        image: ushajun/project2:latest
         ports:
         - containerPort: 80
